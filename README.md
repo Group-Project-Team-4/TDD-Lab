@@ -33,7 +33,7 @@ TDD-Lab/
 ```
 
 ## Setting Up
-- Ensure Python 3.x is installed on your system, run `python3 --version`.
+- Ensure Python 3.x is installed on your system, run `python3 --version`. (Download link below) 
 - Navigate to the location where you would like to save this project.
 - Clone or download this repository to your local machine, run `git clone "URL to code"`.
 - Navigate to the `TDD-Lab` directory.
