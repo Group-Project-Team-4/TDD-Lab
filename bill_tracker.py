@@ -1,3 +1,5 @@
+from bill import Bill
+
 class BillTracker:
     # A class to track monthly bills.
 
@@ -15,17 +17,16 @@ class BillTracker:
 
     def calculate_total(self):
         # Calculate the total amount of all bills.
-        return sum(bill['amount'] for bill in self.bills)
+        return sum(bill.amount for bill in self.bills)
 
     def remove_bill(self, bill):
         # Remove a bill from the tracker.
-        if bill in self.bills:
-            self.bills.remove(bill)
+        bill_to_remove = bill
+        self.bills = [bill for bill in self.bills if bill != bill_to_remove]
 
     def update_bill(self, old_bill, new_bill):
         # Update the details of a bill.
-        try:
-            index = self.bills.index(old_bill)
-            self.bills[index] = new_bill
-        except ValueError:
-            pass
+        for i, bill in enumerate(self.bills):
+            if bill == old_bill:
+                self.bills[i] = new_bill
+                break
