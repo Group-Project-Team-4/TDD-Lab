@@ -1,5 +1,6 @@
 import unittest
 from bill_tracker import BillTracker
+from bill import Bill
 
 class TestRemoveBill(unittest.TestCase):
 
@@ -7,7 +8,7 @@ class TestRemoveBill(unittest.TestCase):
         self.tracker = BillTracker()
 
     def test_remove_bill(self):
-        bill = {'name': 'Cable', 'amount': 20, 'due_date': '2023-05-25'}
+        bill = Bill('Cable', 20, '2023-05-25')
         self.tracker.add_bill(bill)
         self.tracker.remove_bill(bill)
         self.assertNotIn(bill, self.tracker.get_bills())
