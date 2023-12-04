@@ -1,6 +1,6 @@
 import unittest
-from bill_tracker import BillTracker
-from bill import Bill
+from src.bill_tracker import BillTracker
+from src.bill import Bill
 
 class TestAddBill(unittest.TestCase):
     # Test suite for adding bills to the BillTracker.

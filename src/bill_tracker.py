@@ -1,4 +1,4 @@
-from bill import Bill
+from src.bill import Bill
 
 class BillTracker:
     # A class to track monthly bills.
