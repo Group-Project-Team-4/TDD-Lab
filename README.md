@@ -54,6 +54,7 @@ TDD-Lab/
 4. **Implementing Features**: Write the necessary code in the `src/bill_tracker.py` and `src/bill.py` files to pass the tests.
 5. **Refactoring**: Continuously refactor the code for better structure and readability, ensuring all tests pass.
 6. **Interactive Console**: Test the entire application through the `src/bill_tracker_console.py` interface.
+7. **Optional(extra credit)**: If time permits, consider adding input validation.
 
 ## Additional Resources
 - [Python unittest documentation](https://docs.python.org/3/library/unittest.html)
