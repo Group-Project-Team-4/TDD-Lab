@@ -41,16 +41,19 @@ TDD-Lab/
 
 
 ## Interactive Lab Steps
-1. **Running the Failing Tests**: Start by running the test suite. The tests are expected to fail initially since the implementation is commented out.
+1. **Watch and Learn TDD**: Start by gaining a basic understanding of Test Driven Development. Watch the following video (about 15mins)
+   - [TDD in Python Video](https://www.youtube.com/watch?v=B1j6k2j2eJg)
+
+2. **Running the Failing Tests**: Then run the test suite. The tests are expected to fail initially since the implementation is commented out.
    - Run the tests using the command: `python3 -m unittest discover -s tests`
    - Observe the failing tests.
 
-2. **Implementing Features**:
+3. **Implementing Features**:
    - Begin by uncommenting the contents of `src/bill.py` and `src/bill_tracker.py`.
    - After uncommenting each file, rerun the tests to see the changes in test results.
    - Aim to get all tests passing by uncommenting and, if necessary, modifying the source files.
 
-3. **Interacting with the Console Application**:
+4. **Interacting with the Console Application**:
    - Once all tests are passing, uncomment the contents of `src/bill_tracker_console.py`.
    - Run the console application with: `python3 src/bill_tracker_console.py`
    - Interact with the application to manually test its functionality.
@@ -59,4 +62,3 @@ TDD-Lab/
 - [Python3 Download](https://www.python.org/downloads/)
 - [Git Download](https://git-scm.com/downloads)
 - [Python unittest documentation](https://docs.python.org/3/library/unittest.html)
-- [TDD in Python Video](https://www.youtube.com/watch?v=B1j6k2j2eJg)
